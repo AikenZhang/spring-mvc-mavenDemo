@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="wq-status404-dao" />
+        <module name="wq-status404-model" />
+        <module name="wq-status404-service" />
+        <module name="wq-status404-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="wq-status404" target="1.5" />
+      <module name="wq-status404-dao" target="1.5" />
+      <module name="wq-status404-model" target="1.5" />
+      <module name="wq-status404-service" target="1.5" />
+      <module name="wq-status404-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
