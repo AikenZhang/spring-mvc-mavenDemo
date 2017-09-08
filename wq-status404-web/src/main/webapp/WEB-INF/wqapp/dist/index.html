@@ -1,0 +1,17 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,minimum-scale=0.5,maximum-scale=0.5,user-scalable=no"><script type=text/javascript>(function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if(clientWidth>=750){
+                    docEl.style.fontSize = '100px';
+                }else{
+                    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                }
+            };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);</script><link rel=stylesheet type=text/css href=static/lib/Font-Awesome-master/css/font-awesome.min.css><link rel=stylesheet type=text/css href=static/style/common/common.css><link href=/static/css/app.5c688298ea37deac797b547e7041c665.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=/static/js/manifest.064dd843820e47f65fab.js></script><script type=text/javascript src=/static/js/vendor.ba79779ed9edff9cea07.js></script><script type=text/javascript src=/static/js/app.04ee108bad6c44b6f503.js></script></body><script src=https://code.jquery.com/jquery-3.2.1.js integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin=anonymous></script></html>
