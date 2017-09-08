@@ -20,13 +20,13 @@
 </head>
 <body>
 <h1>这里是SpringMVC Demo首页111111</h1>
-
+<img src="./">
 <h3>出现此页面，说明配置成功。</h3>
+<link rel=stylesheet type=text/css href="static/lib/Font-Awesome-master/css/font-awesome.css">
 <script
         src="https://code.jquery.com/jquery-3.2.1.js"
         integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
         crossorigin="anonymous"></script>
-
-
+<script type=text/javascript src="./static/js/app.04ee108bad6c44b6f503.js"></script>
 </body>
 </html>

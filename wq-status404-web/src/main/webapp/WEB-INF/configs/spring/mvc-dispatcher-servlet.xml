@@ -12,8 +12,8 @@
     <!--指明controller所在包，并扫描其中的注解-->
     <context:component-scan base-package="com.wq.controller.index">
     </context:component-scan>
-
-
+    <!--指定静态文件的所在位置-->
+    <mvc:resources mapping="/static/**" location="/WEB-INF/wqapp/dist/static/"></mvc:resources>
     <!--开始注解-->
     <mvc:annotation-driven/>
     <!--viewResolver 视图解析器-->
