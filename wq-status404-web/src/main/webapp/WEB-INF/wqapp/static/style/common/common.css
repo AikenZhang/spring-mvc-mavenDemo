@@ -1,0 +1,14 @@
+*{
+  margin:0;
+  padding:0;
+}
+.WQ-flex{
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:flex;
+}
+.WQ-flex__item{
+  -webkit-box-flex:1;
+  -webkit-flex:1;
+          flex:1;
+}

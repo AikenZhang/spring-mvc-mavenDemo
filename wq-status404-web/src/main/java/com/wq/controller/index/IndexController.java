@@ -13,7 +13,7 @@ public class IndexController {
     private IndexService indexservice=new IndexService();
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public ModelAndView index(){
-        return new ModelAndView("index1");
+        return new ModelAndView("index");
     }
     @RequestMapping(value = "/getName",method = RequestMethod.GET)
     @ResponseBody

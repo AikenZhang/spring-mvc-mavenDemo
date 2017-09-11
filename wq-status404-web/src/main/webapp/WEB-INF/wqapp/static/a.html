@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>账号登录</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,minimum-scale=0.5,maximum-scale=0.5,user-scalable=no">  
+	 <script type="text/javascript">
+	 	(function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if(clientWidth>=750){
+                    docEl.style.fontSize = '100px';
+                }else{
+                    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                }
+            };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+	 </script>
+	 <link rel="stylesheet" type="text/css" href="lib/Font-Awesome-master/css/font-awesome.min.css"">
+	 <link rel="stylesheet" type="text/css" href="style/common/common.css">
+	 <style type="text/css">
+	 	.login_head{
+		border: 1px solid #f00;
+		font-size: 0.4rem;
+		height: 0.88rem;
+		justify-content:space-between;
+		align-items:center;
+		background: #ff6565;
+		color: #fff;
+	 	}
+	 	.login_head_left{
+	 		width:0.3rem;
+	 		text-align: center;
+	 	}
+	 	.login_content{
+	 		font-size:0.4rem;
+	 		justify-content: center;
+	 		align-items: center;
+	 	}
+	 	.login_content_item{
+	 		width:6.7rem;
+	 		height: 0.8rem;
+	 		justify-content: center;
+	 		align-items: center;
+	 		border-radius: 0.4rem;
+	 		border:1px solid #d2d2d2;
+	 		padding-left: 0.2rem;
+	 		margin-left:0.3rem;
+	 		margin-bottom: 1rem;
+	 		line-height: 0.8rem;
+	 	}
+	 	.login_content_input{
+	 		height:0.7rem;
+	 		width:5.5rem;
+	 		outline:none;
+	 		font-size:0.3rem;
+	 		margin-left:15px;
+	 	}
+	 	.login_content_submit{
+	 		background: #ff6565;
+		    color: #fff;
+		    font-size:30px;
+		    text-align: center;
+	 	}
+	 </style>
+  </head>
+</head>
+<body>
+	<div class="WQ-flex login_head">
+		<p class="login_head_left" "><i class="fa fa-angle-left"></i></p>
+		<p>登录</p>
+		<i></i>
+	</div>
+	<!-- 间隔 -->
+	<p style="height: 1.5rem;"></p>
+	<div class="login_content">
+		<div class="WQ-flex login_content_item">
+			<i class="fa fa-user"></i>
+			<input type="text" name="" class="login_content_input" placeholder="账号">
+		</div>
+		<div class="WQ-flex login_content_item">
+			<i class="fa fa-lock"></i>
+			<input type="text" name="" class="login_content_input" placeholder="密码" >
+		</div>
+		<div class="login_content_item login_content_submit">
+			登录
+		</div>
+	</div>
+</body>
+</html>
