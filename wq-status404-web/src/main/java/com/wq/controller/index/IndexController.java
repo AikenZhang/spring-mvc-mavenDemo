@@ -6,12 +6,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import com.wq.service.index.IndexService;
 import com.wq.model.index.IndexModel;
+import org.springframework.web.servlet.ModelAndView;
+
 @Controller
 public class IndexController {
     private IndexService indexservice=new IndexService();
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String index(){
-        return "index";
+    public ModelAndView index(){
+        return new ModelAndView("index1");
     }
     @RequestMapping(value = "/getName",method = RequestMethod.GET)
     @ResponseBody

@@ -50,6 +50,8 @@
           <element id="archive" name="wq-status404-model-1.0-SNAPSHOT.jar">
             <element id="module-output" name="wq-status404-model" />
           </element>
+          <element id="library" level="project" name="Maven: org.freemarker:freemarker:2.3.22" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context-support:4.2.6.RELEASE" />
         </element>
       </element>
       <element id="directory" name="META-INF">
